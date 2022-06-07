@@ -245,8 +245,8 @@ ul {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  background-color: rgb(125, 115, 252);
-  border-color: rgb(125, 115, 252);
+  background-color: rgb(62, 49, 254);
+  border-color: rgb(62, 49, 254);
   justify-content: space-around;
   width: 100px;
   margin-left: 30px;
@@ -279,8 +279,8 @@ button:disabled {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  border-color: rgb(125, 115, 252);
-  background-color: rgb(147, 144, 255);
+  border-color: rgb(62, 49, 254);
+  background-color: rgb(62, 49, 254);
   justify-content: center;
   margin: auto;
   color: rgb(255, 255, 255);
@@ -297,8 +297,8 @@ button:disabled {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  background-color: rgb(125, 115, 252);
-  border-color: rgb(125, 115, 252);
+  background-color: rgb(62, 49, 254);
+  border-color: rgb(62, 49, 254);
   justify-content: center;
   width: 100px;
   margin: auto;
@@ -402,11 +402,6 @@ button:disabled {
   flex-wrap: wrap;
   display: flex;
   font-family: "roboto", sans-serif;
-}
-
-. {
-  width: 90%;
-  margin: 10% auto;
 }
 
 .lasttext {
@@ -813,8 +808,8 @@ div a {
     align-items: center;
     padding: 12px;
     gap: 10px;
-    background-color: rgb(147, 144, 255);
-    border-color: rgb(125, 115, 252);
+    background-color: rgb(62, 49, 254);
+    border-color: rgb(62, 49, 254);
     justify-content: space-around;
     width: 100px;
     margin-left: 30px;
