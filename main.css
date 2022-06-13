@@ -501,6 +501,9 @@ div a {
   background-color: rgb(25, 23, 101);
   backdrop-filter: blur(3px);
   transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  background-image: url(./shapes-mobile-menu.svg);
+  background-repeat: no-repeat;
+  background-position: 15% 5%;
 }
 
 .mobile-menu.active {
@@ -509,27 +512,42 @@ div a {
 
 #close-btn {
   align-self: end;
-  width: 40px;
+  width: 32px;
   padding: 10px;
   height: auto;
+  padding-right: 23px;
+  padding-top: 25px;
+}
+
+.testing-div {
+  margin-top: -38px;
+  margin-bottom: 48px;
+  padding-right: 29px;
 }
 
 .menu-items {
   padding-left: 30px;
   text-align: left;
-  margin-top: 60px;
+  margin-top: 20px;
   gap: 20px;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
 .menu-items li {
   padding: 20px;
   list-style: none;
+  margin-top: 5px;
 }
 
 .menu-items li a {
   font-size: 24px;
   color: #fff;
   text-decoration: none;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
 .toggle-menu {
@@ -540,6 +558,22 @@ div a {
 
 .toggle-menu.invisible {
   transform: scale(0);
+}
+
+.arrow-button {
+  align-self: end;
+  width: 40px;
+  padding: 10px;
+  height: auto;
+  align-content: center;
+}
+
+.menu-item-arrow {
+  top: 5px;
+}
+
+.link-menu-mobile {
+  margin-top: 5px;
 }
 
 @media only screen and (min-width: 768px) {
