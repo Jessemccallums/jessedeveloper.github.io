@@ -23,7 +23,17 @@
             </div>
             <nav class="menu">
                 
-                <a href="#"><img src="Union.svg" alt="menu" class="img_media_query" href="#"/></a>
+                <a href="#"><img src="Union.svg" alt="menu" class="img_media_query" id="toggle-menu"/></a>
+                <div class="mobile-menu"> 
+                    <img src="close-icon.svg" alt="close-icon"  id="close-btn">
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="#project-section">Portfolio</a></li>
+                        <li class="menu-item"><a href="#about-me">About</a></li>
+                        <li class="menu-item"><a href="#Contact-me">Contact</a></li>
+                    </ul>
+                </div>
+        
+                
                 <ul class="responsive-ul">
                     <li class="respondive-li"><a href="#">Portfolio</a></li>
                     <li class="respondive-li"><a href="#">About</a></li>
@@ -36,7 +46,7 @@
 
     </header>
 
-    <section class="first width">
+    <section class="first width" id="about-me">
         <h1 class="firsttext">Jesse McCallums</h1>
         <h2 class="secondtext"> Software developer</h2>
         <p class="parrafo">I can help you build a product , feature or website Look through some of my work and
@@ -275,7 +285,7 @@
 
     </section>
 
-    <section class="second width">
+    <section class="second width" id="project-section">
 
         <h2 class="myrecentwork">My recent 
             work</h2>
@@ -534,7 +544,7 @@
     
     </section>
 
-    <footer class="third width">
+    <footer class="third width" id="Contact-me">
         <h2 class="maintextfooter">Contact us</h2>
         <p class="paragraph-text1">If you have an application you are interested in developing, a feature that you need
             built or a project that
@@ -608,6 +618,10 @@
         <a href="#"><p class="text-footer">jessemccallums2001@gmail.com</p></a>
     </div>
     </footer>
+<script src="script.js"></script>
+
 </body>
+
+
 
 </html>
