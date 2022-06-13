@@ -498,7 +498,7 @@ div a {
   width: 100vw;
   height: 100vh;
   transform: scale(0);
-  background-color: rgb(25, 23, 101, 0.75);
+  background-color: rgb(25, 23, 101);
   backdrop-filter: blur(3px);
   transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
