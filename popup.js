@@ -73,17 +73,17 @@ function openPopup(index) { // index for getting the project number
   </p>
   <div class="down">
   <ul class="languages-used">
-      <li ><img src="devider.svg" alt="devider" class="devider"></li>
+      <li ><img src="Devider.svg" alt="devider" class="devider"></li>
       <li class="language">${languages[0]}</li>
-      <li ><img src="devider.svg" alt="devider" class="devider"></li>
+      <li ><img src="Devider.svg" alt="devider" class="devider"></li>
       <li class="language">${languages[1]}</li>
-      <li ><img src="devider.svg" alt="devider" class="devider"> </li>
+      <li ><img src="Devider.svg" alt="devider" class="devider"> </li>
       <li class="language">${languages[2]}</li>
-      <li ><img src="devider.svg" alt="devider" class="devider"></li>
+      <li ><img src="Devider.svg" alt="devider" class="devider"></li>
   </ul>
   <div class="pop-up-btns">
   <button  type="button" class="pop-up-btn live-btn" >
-      ${liveVersion}
+      ${liveVersion}S
       <i class="bi bi-arrow-up-right-circle-fill"></i>
   </button>
   <button  type="button" class="pop-up-btn source-btn" >
