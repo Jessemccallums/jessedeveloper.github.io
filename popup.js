@@ -83,7 +83,7 @@ function openPopup(index) { // index for getting the project number
   </ul>
   <div class="pop-up-btns">
   <button  type="button" class="pop-up-btn live-btn" >
-      ${liveVersion}S
+      ${liveVersion}
       <i class="bi bi-arrow-up-right-circle-fill"></i>
   </button>
   <button  type="button" class="pop-up-btn source-btn" >
