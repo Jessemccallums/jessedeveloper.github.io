@@ -5,7 +5,7 @@ const projects = [
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent, Lorem Ipsum is simply dummy text.",
       languages: ['html', 'css', 'javascript'],
-      image: './assets/images/project-1.png',
+      image: 'Img.Placeholder.svg',
       liveVersion: 'See Live',
       sourceLink: 'See Source',
     },
@@ -15,7 +15,7 @@ const projects = [
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent, Lorem Ipsum is simply dummy text.",
       languages: ['html', 'css', 'javascript','React'],
-      image: './assets/images/project-2.png',
+      image: 'Img.Placeholder.svg',
       liveVersion: 'See Live',
       sourceLink: 'See Source',
     },
@@ -25,7 +25,7 @@ const projects = [
       description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent, Lorem Ipsum is simply dummy text.",
       languages: ['html', 'css', 'javascript'],
-      image: './assets/images/project-3.png',
+      image: 'Img.Placeholder.svg',
       liveVersion: 'See Live',
       sourceLink: 'See Source',
     },
@@ -35,7 +35,7 @@ const projects = [
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent, Lorem Ipsum is simply dummy text.",
       languages: ['html', 'css', 'javascript'],
-      image: './assets/images/project-4.png',
+      image: 'Img.Placeholder.svg',
       liveVersion: 'See Live',
       sourceLink: 'See Source',
     },
@@ -44,6 +44,10 @@ const projects = [
   const seeProjectBtn2 = document.querySelector('.project2-link');//get-project btns
   const seeProjectBtn3 = document.querySelector('.project3-link');//get-project btns
   const seeProjectBtn4 = document.querySelector('.project4-link');//get-project btns
+  const seeProjectBtn5 = document.querySelector('.project5-link');//get-project btns
+  const seeProjectBtn6 = document.querySelector('.project6-link');//get-project btns
+  const seeProjectBtn7 = document.querySelector('.project7-link');//get-project btns
+  const bodyWrapper = document.querySelector('.body-wrapper');//get-project btns
   const overlay = document.querySelector('#overlay');//get overlay
   const container = document.querySelector('.pop-up-window');//get the popup-window
 //open-popup function
@@ -60,32 +64,27 @@ function openPopup(index){//index for getting the project number
   //fill the popup container with html
   container.innerHTML = `
  <div class="pop-up-body">
-  <img src=${image} alt="Screenshot-of-*project-name*">
-  <div class="about-project left">
-  <a class="popup-close-btn">&times;</a>
-  <div class="pop-up-header">
+ <div class="pop-up-header">
   <h3 class="project-name">
     ${name}
   </h3>
-  <div class="developer-info">
-    <h4 class="developer-name">
-        ${devInfo}
-    </h4>
-    <ul>
-        <li>● Back End Dev</li>
-        <li>● 2022</li>
-    </ul>
-  </div>
 </div>
+  <img src=${image} alt="Screenshot-of-">
+  <div class="about-project left">
+  <a class="popup-close-btn">&times;</a>
   <p class="project-description">
    ${description}
   </p>
   <div class="down">
   <ul class="languages-used">
+      <li ><img src="devider.svg" alt="devider" class="devider"></li>
       <li class="language">${languages[0]}</li>
+      <li ><img src="devider.svg" alt="devider" class="devider"></li>
       <li class="language">${languages[1]}</li>
+      <li ><img src="devider.svg" alt="devider" class="devider"> </li>
       <li class="language">${languages[2]}</li>
-  </ul><hr>
+      <li ><img src="devider.svg" alt="devider" class="devider"></li>
+  </ul>
   <div class="pop-up-btns">
   <button  type="button" class="pop-up-btn live-btn" >
       ${liveVersion}
@@ -100,22 +99,25 @@ function openPopup(index){//index for getting the project number
   </div?
 </div>`
 //then add class of active to them
+  
   container.classList.add('active');
   overlay.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  bodyWrapper.style.overflowY = 'hidden';
+
 //close-popup function
   const popupCloseBtn = document.querySelector('.popup-close-btn');//get the close btn
     popupCloseBtn.addEventListener('click', () => {
     //remove active from class
     container.classList.remove('active');
     overlay.classList.remove('active');
-    document.body.style.overflow = 'auto'//for turning the background scrolling effect off
+    document.body.style.overflowY = 'auto'//for turning the background scrolling effect off
   });
   //remove class active if user click outside the popup-window
   overlay.addEventListener('click', () => {
     container.classList.remove('active');
     overlay.classList.remove('active');
-    document.body.style.overflow = 'auto'//for turning the background scrolling effect off
+    document.body.style.overflowY = 'auto'//for turning the background scrolling effect off
+
   });
 }
 //calling open function if user clicks on see project btn
@@ -129,5 +131,14 @@ seeProjectBtn3.addEventListener('click', () =>{
   openPopup(2)
 });
 seeProjectBtn4.addEventListener('click', () =>{
+  openPopup(3)
+});
+seeProjectBtn5.addEventListener('click', () =>{
+  openPopup(3)
+});
+seeProjectBtn6.addEventListener('click', () =>{
+  openPopup(3)
+});
+seeProjectBtn7.addEventListener('click', () =>{
   openPopup(3)
 });
