@@ -969,8 +969,6 @@ div a {
   border-radius: 10px;
 }
 
-
-
 .pop-up-body {
   margin: 10px auto;
   width: 75vw;
@@ -981,7 +979,6 @@ div a {
 }
 
 .project-description {
-  width: 75vw;
   padding: 0;
   color: #fff;
   margin: 20px auto;
@@ -1014,10 +1011,9 @@ img.devider {
 .pop-up-btns {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 20px auto;
   width: 50%;
   gap: 62px;
 }
@@ -1065,7 +1061,6 @@ img.devider {
   opacity: 1;
   pointer-events: all;
 }
-
 
 @media only screen and (min-width: 768px) {
   .pop-up-btns {
