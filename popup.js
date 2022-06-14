@@ -46,7 +46,8 @@ const projects = [
   const seeProjectBtn4 = document.querySelector('.project4-link');//get-project btns
   const seeProjectBtn5 = document.querySelector('.project5-link');//get-project btns
   const seeProjectBtn6 = document.querySelector('.project6-link');//get-project btns
-  const seeProjectBtn7 = document.querySelector('.project7-link');//get-project btns
+  const seeProjectBtn7 = document.querySelector('.project7-link');
+  const seeProjectBtn8 = document.querySelector('.project8-link');//get-project btns
   const bodyWrapper = document.querySelector('.body-wrapper');//get-project btns
   const overlay = document.querySelector('#overlay');//get overlay
   const container = document.querySelector('.pop-up-window');//get the popup-window
@@ -142,3 +143,7 @@ seeProjectBtn6.addEventListener('click', () =>{
 seeProjectBtn7.addEventListener('click', () =>{
   openPopup(3)
 });
+
+seeProjectBtn8.addEventListener('click', () =>{
+    openPopup(3)
+  });
