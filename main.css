@@ -1373,10 +1373,7 @@ input:focus {
     margin-left: -2%;
   }
 
-
-/* 
-  form validation */
-
+/* form validation */
   #form-container {
     display: flex;
     flex-direction: column;
@@ -1387,7 +1384,6 @@ input:focus {
   }
  
 
-  
 .contact-me {
   font-size: 40px;
   font-weight: 700;
@@ -1472,9 +1468,72 @@ input:focus {
 }
 }
 
+/*Contact form*/
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 80vw;
+  margin: 0 auto;
+}
 
-/* 
-form-validation */
+
+.errorMsg {
+  color: #ff3860;
+}
+
+.input-control {
+  width: 100%;
+}
+
+input {
+  font-size: 17px;
+  color: #191765;
+  padding: 15px 16px;
+  width: -webkit-fill-available;
+  border: 1px solid #cfd8dc;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border: 3px solid #09c372;
+}
+
+.input-control.error input {
+  border: 3px solid #ff3860;
+}
+
+::placeholder {
+  color: #b3bac5;
+}
+
+#message {
+  border: 1px solid #cfd8dc;
+  width: -webkit-fill-available;
+  font-size: 17px;
+  color: #81818C;
+  padding: 8px;
+}
+
+.contact-btn {
+  background: #7D73FC;
+  color: #fff;
+  margin: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px 13px;
+  transition: 1s;
+}
+@media (min-width: 768px) {
+  #form-container{
+    width: 40vw;
+  }
+}
 
 
 
