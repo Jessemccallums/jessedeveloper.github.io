@@ -33,7 +33,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-
 // form validation
 const form = document.querySelector('form');// get the form
 const username = document.getElementById('name');// get the name
