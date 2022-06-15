@@ -38,25 +38,19 @@ const form = document.querySelector('form');// get the form
 const username = document.getElementById('name');// get the name
 const email = document.getElementById('email');// get the email
 const message = document.getElementById('message');// get the message
-
+const errorDisplay = document.querySelector('.errorMsg');
 // for setting the error message
 const setError = (element, message) => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.errorMsg');
-
   errorDisplay.innerText = message;
-  inputControl.classList.add('error');
-  inputControl.classList.remove('success');
+  errorDisplay.classList.add('error');
+  errorDisplay.classList.remove('success');
 };
 
 // for setting the the success message
 const setSuccess = (element) => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.errorMsg');
-
   errorDisplay.innerText = '';
-  inputControl.classList.add('success');
-  inputControl.classList.remove('error');
+  errorDisplay.classList.add('success');
+  errorDisplay.classList.remove('error');
 };
 
 let submitPt = 0;// for calcuating the result should be 3
