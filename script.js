@@ -47,7 +47,7 @@ const setError = (element, message) => {
 };
 
 // for setting the the success message
-const setSuccess = (element) => {
+const setSuccess = () => {
   errorDisplay.innerText = '';
   errorDisplay.classList.add('success');
   errorDisplay.classList.remove('error');
