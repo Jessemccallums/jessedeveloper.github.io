@@ -521,6 +521,8 @@ div a {
   height: auto;
   padding-right: 23px;
   padding-top: 25px;
+  
+  margin-left: 80%;
 }
 
 .testing-div {
@@ -584,7 +586,7 @@ div a {
   .img_media_query {
     display: none;
   }
-
+  
   nav {
     display: flex;
     flex-direction: row;
@@ -674,7 +676,6 @@ div a {
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    margin-top: 4%;
   }
 
   .footer-icons-responsive-desktop {
@@ -772,6 +773,7 @@ div a {
 
   .div-mediaquery1-version2 {
     margin-left: 7%;
+    margin-top: 5%;
   }
 
   .disappear-from-desktop {
@@ -789,6 +791,9 @@ div a {
   .div-mediaquery1 {
     margin-right: 5%;
     margin-left: 5%;
+    
+    margin-top: 5%;
+
   }
 
   .styling-version {
@@ -1182,6 +1187,12 @@ img.devider {
   .responsive-ul {
     display: none;
   }
+  .cont1 {
+    width: 88%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
 
   .img_media_query_desktop {
     display: none;
@@ -1234,6 +1245,8 @@ img.devider {
     display: flex;
     justify-content: space-around;
     margin-bottom: -15%;
+    margin-left: -43%;
+    margin-top: 1%;
   }
 
   .styling1_responsive {
@@ -1250,11 +1263,15 @@ img.devider {
     font-size: 70px;
     justify-content: space-around;
     align-items: center;
+    
+    margin-top: 25%;
   }
 
   .styling1-section {
     display: flex;
     column-gap: 20px;
+    
+    margin-top: 10%;
   }
 
   .styling1 {
@@ -1356,8 +1373,9 @@ img.devider {
     align-items: center;
     padding-right: -60px;
     flex-wrap: wrap;
-    padding-left: 24px;
-    padding-top: 35px;
+    
+    margin-left: 41px;
+    margin-top: 113px;
     width: 327px;
     height: 104px;
   }
@@ -1452,6 +1470,12 @@ img.devider {
   @media (min-width: 768px) {
     #form-container {
       width: 40vw;
+    }
+    .cont1 {
+      width: 88%;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
     }
 
     h4.contact-me {
